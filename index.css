@@ -1,0 +1,228 @@
+html {
+	background-image: url("../imgs/downtown.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 1000px;
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+*{
+    margin: 0;
+}
+
+.navigationmenuitem{
+    font-size: 75px;
+}
+
+/* Header */
+header { 
+    background-image: -webkit-linear-gradient(45deg, white 0%, rgb(113, 217, 252) 75%, rgb(9, 180, 248) 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, rgb(113, 217, 252) 75%, rgb(9, 180, 248) 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, rgb(113, 217, 252) 75%, rgb(9, 180, 248) 100%);
+    background-image: linear-gradient(45deg, white 0%, rgb(113, 217, 252) 75%, rgb(9, 180, 248) 100%);
+    padding: 15px;
+} 
+header img { 
+	float: left; 
+	padding-right: 15px;  
+} 
+header h2 {
+	font-size: 230%;
+}
+header h3 {
+	font-size: 125%;
+	padding-bottom: 15px;
+}
+
+/* Navigation menu */
+
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li{
+    float: none;
+    position: relative;
+}
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0; 
+}
+
+#nav_menu ul li.lastitem ul li ul {
+    position: absolute;
+    left: -100%;
+    top: 0; 
+}
+#nav_menu ul li:hover > ul { 
+    display: block; 
+}
+
+#nav_menu ul li:hover > ul { 
+    display: block; 
+}
+
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block; 
+}
+
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 200px;
+	padding: .7em 0;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+}
+
+
+#nav_menu ul li.lastitem a { 
+    width: 178px; 
+}
+
+#nav_menu ul li a.current { 
+    color: yellow; 
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus { 
+    background-color: gray; 
+}
+
+#productdescription{
+    float: right;
+    width: 225px;
+    padding: 20px 0;
+}
+/* Sidebar */
+aside {
+	float: left; 
+	width: 160px;
+	padding: 20px 0; 
+    /*background: rgb(113, 217, 252);*/
+}
+#nav_list_aside{
+    border-right: 1px solid black;
+    height: 610px;
+}
+#nav_list ul { 
+	list-style: none;
+	padding-left: 1.5em;
+}
+#nav_list ul li { 
+	width: 110px;
+    text-align: center;
+    margin-top: 25px;
+	/*border: 2px solid black; */
+}
+#nav_list ul li a {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	/*background-color: rgb(113, 217, 252);*/
+	padding: .5em 0 .5em .5em;
+	color: black;
+    border-bottom: 1px solid black;
+}
+#nav_list ul li a i{
+    font-size: 60px;
+}
+/* Section */
+section {
+    float: left;
+	width: 600px;
+	padding: 30px 40px 20px 10px;	
+    text-align: justify;
+}
+
+section ol li{
+    margin-top: 15px;
+}
+
+section img{
+    border: 1px solid black;
+}
+
+.nycdesc{
+    margin-top: 15px;
+    font-weight: bold
+}
+
+.nycdescription{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+/* Article */
+#citiesinfo{
+    /*background-color: rgb(113, 217, 252);*/
+    /*border: 1px solid black;*/
+    height: 615px;
+    border-left: 1px solid black;
+    float: right;
+    padding: 15px 0 20px 5px;
+    width: 180px;
+}
+#citiesinfo ul{
+    list-style-type: none;
+}
+
+#citiesinfo ul li{
+    margin-top: 25px;
+}
+
+#citiesinfo img{
+    border: 1px solid black;
+}
+
+#citiesinfo ul li a{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+/* Footer */
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: 15px;
+    background-image: -webkit-linear-gradient(45deg, rgb(9, 180, 248) 0%, rgb(113, 217, 252) 25%, white 100%);
+    background-image: -moz-linear-gradient(45deg, rgb(9, 180, 248) 0%, rgb(113, 217, 252) 25%, white 100%);
+    background-image: -o-linear-gradient(45deg, rgb(9, 180, 248) 0%, rgb(113, 217, 252) 25%, white 100%);
+    background-image: linear-gradient(45deg, rgb(9, 180, 248) 0%, rgb(113, 217, 252) 25%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
